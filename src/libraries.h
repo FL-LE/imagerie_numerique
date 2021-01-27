@@ -19,8 +19,14 @@
 #include <sstream>
 #include <iterator>
 
-using namespace std;
+#include <cmath>
 
+
+struct Vector3D{	// Vecteur à trois dimensions
+	float x;
+	float y;
+	float z;
+};
 
 
 
@@ -29,7 +35,30 @@ using namespace std;
  *	@details	
  *	@param		
  */
-void temp11();
+float length(Vector3D v);
 
+
+/**
+ *	@brief 		Fonction
+ *	@details	
+ *	@param		
+ */
+float scalar_product(Vector3D v1, Vector3D v2);
+
+
+/**
+ *	@brief 		Fonction
+ *	@details	
+ *	@param		
+ */
+Vector3D vectorial_product(Vector3D v1, Vector3D v2);
+ 
+ 
+ /**
+ *	@brief 		Fonction
+ *	@details	
+ *	@param		
+ */
+void reflected_ray(Vector3D v);
 
 #endif
