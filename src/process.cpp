@@ -82,7 +82,10 @@ void generate_image(std::string filename, int width, int height){
 		cerr << "Can't allocate image" << endl;
 		return;
 	}
-
+	
+	Camera camera(0.0f, 0.0f, -1.0f, width/2, height/2);
+	
+	
 	for (size_t i = 0; i < width; i++)
 	{
 		for (size_t j = 0; j < height; j++)

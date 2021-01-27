@@ -8,10 +8,6 @@
  *
 */
 
-// USEFUL/BASIC LIBRARIES
-#include "libraries.h"
-
-
 // OBJECTS
 #include "camera.h"
 #include "intersections.h"
