@@ -8,7 +8,7 @@
  */
  
  
- // CONSTRUCTOR
+// CONSTRUCTOR
 Camera::Camera(float dir_x, float dir_y, float dir_z, int pos_x, int pos_y, int pos_z){
 	
 	direction.x = dir_x;
@@ -48,10 +48,3 @@ void Camera::set_direction(float dir_x, float dir_y, float dir_z){
 
 
 
-/************************************************
- *		Fonctions
- ************************************************/
-
-void temp1(){
-	return;
-}

@@ -83,7 +83,19 @@ void generate_image(std::string filename, int width, int height){
 		return;
 	}
 	
+	//Default objects and behavior set here
+	float focal_distance = 1.0f;
+	
 	Camera camera(0.0f, 0.0f, -1.0f, 0.0f, 0.0f, 0.0f); //Direction and then position
+	
+	Plan image_plane(camera.position.x, camera.position.y, camera.position.z + focal_distance, focal_distance); // si distance focale = 1 de caméra à plan de l'image
+	Plan near_plane(camera.position.x, camera.position.y, camera.position.z + focal_distance + 2.0f, focal_distance + 2.0f);
+	Plan far_plane(camera.position.x, camera.position.y, camera.position.z + focal_distance + 200.0f, focal_distance + 200.0f);
+	
+	
+	
+	
+	// DATA PROCESSING HERE.........................
 	
 	
 	for (size_t i = 0; i < width; i++)

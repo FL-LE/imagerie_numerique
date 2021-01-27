@@ -13,6 +13,9 @@
 class Camera{
 	
 	public :
+	
+		Vector3D position;
+	
 		//SETTER
 		void set_position(int pos_x, int pos_y, int pos_z);
 		void set_direction(float dir_x, float dir_y, float dir_z);
@@ -26,16 +29,7 @@ class Camera{
 		
 	private :
 		Vector3D direction;
-		Vector3D position;
 };
-
-
-/**
- *	@brief 		Fonction
- *	@details	
- *	@param		
- */
-void temp1();
 
 
 #endif
