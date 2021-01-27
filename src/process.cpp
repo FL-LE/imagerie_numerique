@@ -83,7 +83,7 @@ void generate_image(std::string filename, int width, int height){
 		return;
 	}
 	
-	Camera camera(0.0f, 0.0f, -1.0f, width/2, height/2);
+	Camera camera(0.0f, 0.0f, -1.0f, 0.0f, 0.0f, 0.0f); //Direction and then position
 	
 	
 	for (size_t i = 0; i < width; i++)
