@@ -8,8 +8,9 @@ Ce projet a été fait sous Linux Ubuntu 20.04. Les librairies installées sont 
 
 
 Les fonctions implémentées lors de ce projet sont les suivantes :
- - [ ] Effectuation d'un lancer de rayon avec un modèle de matériau de Blinn-Phong
+ - [x] Effectuation d'une bibliothèque mathématique de vecteurs à trois dimensions
  - [ ] Gestion des sphères, plans et faces triangulaires comme primitives
+ - [ ] Effectuation d'un lancer de rayon avec un modèle de matériau de Blinn-Phong
  - [x] Sauvegarde de l'image dans un fichier de sortie (.bmp)
 
 D'autres fonctionnalités ont aussi été implémentées :
