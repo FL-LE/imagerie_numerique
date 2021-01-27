@@ -1,0 +1,7 @@
+[CONFIG]
+
+OUTPUT_Image=../images/test.bmp
+OUTPUT_width=800
+OUTPUT_height=600
+
+#TODO
