@@ -89,8 +89,8 @@ void generate_image(std::string filename, int width, int height){
 	Camera camera(0.0f, 0.0f, -1.0f, 0.0f, 0.0f, 0.0f); //Direction and then position
 	
 	Plan image_plane(camera.position.x*camera.direction.x, camera.position.y*camera.direction.y, (camera.position.z + focal_distance)*camera.direction.z, focal_distance); // si distance focale = 1 de caméra à plan de l'image
-	Plan near_plane(camera.position.x*camera.direction.x, camera.position.y*camera.direction.y, (camera.position.z + focal_distance + 2.0f)*camera.direction.z, focal_distance + 2.0f);
-	Plan far_plane(camera.position.x*camera.direction.x, camera.position.y*camera.direction.y, (camera.position.z + focal_distance + 10.0f)*camera.direction.z, focal_distance + 10.0f);
+	Plan near_plane(camera.position.x*camera.direction.x, camera.position.y*camera.direction.y, (camera.position.z + focal_distance + 0.5f)*camera.direction.z, focal_distance + 2.0f);
+	Plan far_plane(camera.position.x*camera.direction.x, camera.position.y*camera.direction.y, (camera.position.z + focal_distance + 150.0f)*camera.direction.z, focal_distance + 10.0f);
 	
 	
 	// DATA PROCESSING HERE......................... TODO !!!!!
