@@ -88,7 +88,28 @@ void generate_image(std::string filename, int width, int height){
 	
 	Camera camera(0.0f, 0.0f, -1.0f, 0.0f, 0.0f, 0.0f); //Direction and then position
 	
+	// PLANS
+	
+	//Image plan
 	Plan image_plane(camera.position.x*camera.direction.x, camera.position.y*camera.direction.y, (camera.position.z + focal_distance)*camera.direction.z, focal_distance); // si distance focale = 1 de caméra à plan de l'image
+	
+	if((float)(width/height) == 1.33f){	// RATIO : 4/3
+		Vector3D image_plane_top_left;
+		image_plane_top_left.x = -1.0f;
+		image_plane_top_left.y = 0.75f;
+		image_plane_top_left.z = -1.0f;
+
+		Vector3D image_plane_bottom_right;
+		image_plane_bottom_right.x = 1.0f;
+		image_plane_bottom_right.y = -0.75f;
+		image_plane_bottom_right.z = -1.0f;
+	}
+	else{
+		cerr << "This program does not support another image ratio than the 4/3, please, check the image configuration in the config.obj file." << endl;
+		return;
+	}
+	
+	
 	Plan near_plane(camera.position.x*camera.direction.x, camera.position.y*camera.direction.y, (camera.position.z + focal_distance + 0.5f)*camera.direction.z, focal_distance + 2.0f);
 	Plan far_plane(camera.position.x*camera.direction.x, camera.position.y*camera.direction.y, (camera.position.z + focal_distance + 150.0f)*camera.direction.z, focal_distance + 10.0f);
 	
