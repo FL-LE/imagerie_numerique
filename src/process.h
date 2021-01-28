@@ -9,12 +9,6 @@
 */
 
 // OBJECTS
-#include "camera.h"
-#include "intersections.h"
-#include "light_source.h"
-#include "materials.h"
-#include "primitive_objects.h"
-#include "rays.h"
 #include "scene.h"
 
 // LIBRARIES

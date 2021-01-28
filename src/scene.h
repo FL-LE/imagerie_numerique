@@ -10,6 +10,13 @@
 
 #include "libraries.h"
 
+#include "camera.h"
+#include "intersections.h"
+#include "light_source.h"
+#include "materials.h"
+#include "primitive_objects.h"
+#include "rays.h"
+
 
 /**
  *	@brief 		Fonction

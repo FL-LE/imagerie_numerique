@@ -14,8 +14,6 @@ class Camera{
 	
 	public :
 	
-		Vector3D position;
-	
 		//SETTER
 		void set_position(int pos_x, int pos_y, int pos_z);
 		void set_direction(float dir_x, float dir_y, float dir_z);
@@ -28,6 +26,7 @@ class Camera{
 		Camera(float dir_x, float dir_y, float dir_z, int pos_x, int pos_y, int pos_z);
 		
 	private :
+		Vector3D position;
 		Vector3D direction;
 };
 

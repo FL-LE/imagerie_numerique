@@ -89,9 +89,9 @@ void generate_image(std::string filename, int width, int height){
 	Camera camera(0.0f, 0.0f, -1.0f, 0.0f, 0.0f, 0.0f); //Direction and then position
 	
 	// PLANS
-	
+		
 	//Image plan
-	Plan image_plane(camera.position.x*camera.direction.x, camera.position.y*camera.direction.y, (camera.position.z + focal_distance)*camera.direction.z, focal_distance); // si distance focale = 1 de caméra à plan de l'image
+	Plan image_plane(camera.get_direction().x*camera.get_direction().x, camera.get_position().y*camera.get_direction().y, (camera.get_position().z + focal_distance)*camera.get_direction().z, focal_distance); // si distance focale = 1 de caméra à plan de l'image
 	
 	if((float)(width/height) == 1.33f){	// RATIO : 4/3
 		Vector3D image_plane_top_left;
@@ -109,9 +109,9 @@ void generate_image(std::string filename, int width, int height){
 		return;
 	}
 	
-	
-	Plan near_plane(camera.position.x*camera.direction.x, camera.position.y*camera.direction.y, (camera.position.z + focal_distance + 0.5f)*camera.direction.z, focal_distance + 0.5f);
-	Plan far_plane(camera.position.x*camera.direction.x, camera.position.y*camera.direction.y, (camera.position.z + focal_distance + 150.0f)*camera.direction.z, focal_distance + 150.0f);
+	//Near plan and far plan to delimitate usable space
+	Plan near_plane(camera.get_direction().x*camera.get_direction().x, camera.get_position().y*camera.get_direction().y, (camera.get_position().z + focal_distance + 0.5f)*camera.get_direction().z, focal_distance + 0.5f); // si distance focale = 1 de caméra à plan de l'image
+	Plan far_plane(camera.get_direction().x*camera.get_direction().x, camera.get_position().y*camera.get_direction().y, (camera.get_position().z + focal_distance + 150.0f)*camera.get_direction().z, focal_distance + 150.0f); // si distance focale = 1 de caméra à plan de l'image
 	
 	
 	// DATA PROCESSING HERE......................... TODO !!!!!
