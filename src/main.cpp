@@ -5,8 +5,8 @@
  *	@file 		main.cpp
  *	@author 	COLLART Quentin, LETHU Florian, MOREAU Hugo
  *
- *	@brief 		Projet intégralement en c permettant la manipulation d'automates.
- *	@details	Fichier principal. Utilisé pour effectuer les tests.
+ *	@brief 		Projet intégralement en C++ permettant l'application de l'agorithme de lancer de rayons.
+ *	@details	Fichier principal. Utilisé pour effectuer les tests et vérifications de configuration.
  *
 */
 
