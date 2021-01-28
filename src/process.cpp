@@ -110,8 +110,8 @@ void generate_image(std::string filename, int width, int height){
 	}
 	
 	
-	Plan near_plane(camera.position.x*camera.direction.x, camera.position.y*camera.direction.y, (camera.position.z + focal_distance + 0.5f)*camera.direction.z, focal_distance + 2.0f);
-	Plan far_plane(camera.position.x*camera.direction.x, camera.position.y*camera.direction.y, (camera.position.z + focal_distance + 150.0f)*camera.direction.z, focal_distance + 10.0f);
+	Plan near_plane(camera.position.x*camera.direction.x, camera.position.y*camera.direction.y, (camera.position.z + focal_distance + 0.5f)*camera.direction.z, focal_distance + 0.5f);
+	Plan far_plane(camera.position.x*camera.direction.x, camera.position.y*camera.direction.y, (camera.position.z + focal_distance + 150.0f)*camera.direction.z, focal_distance + 150.0f);
 	
 	
 	// DATA PROCESSING HERE......................... TODO !!!!!
