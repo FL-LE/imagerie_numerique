@@ -20,6 +20,7 @@
 #include <iterator>
 
 #include <cmath>
+#include <vector>
 
 
 struct Vector3D{	// Vecteur à trois dimensions
